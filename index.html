@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-image: url("greeny background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* OVERLAY */
+        .overlay {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+            min-height: 100vh;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: gold;
+        }
+
+        .nav-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        /* BUTTON */
+        .btn {
+            background: gold;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: orange;
+            transform: scale(1.1);
+        }
+
+        /* MEDIA SECTION */
+        .media-section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .media-image {
+            width: 342px;
+            border-radius: 10px;
+        }
+
+        .media-video {
+            width: 600px;
+            border-radius: 10px;
+        }
+
+        /* AUDIO */
+        .audio-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        audio {
+            width: 80%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">mini-website</div>
+
+        <div class="nav-links">
+            <a href="index.html">Index</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Welcome to my mini-website</h1>
+        <p>Join me!</p>
+        <button class="btn">Start</button>
+    </div>
+
+    <!-- MEDIA SECTION -->
+    <div class="media-section">
+
+        <!-- IMAGE -->
+        <div>
+            <h2>My picture</h2>
+            <img class="media-image" src="lenz.jpg" alt="My picture">
+        </div>
+
+        <!-- VIDEO -->
+        <div>
+            <h2>My video</h2>
+            <video class="media-video" controls>
+                <source src="web_development_demo-bsit1b-felas.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+    <!-- AUDIO -->
+    <div class="audio-section">
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="web_development_demo-bsit1b-felas.mp4" type="audio/mpeg">
+        </audio>
+    </div>
+     <a href="https://google.com/">Google</a>
+</div>
+
+</body>
+</html>
